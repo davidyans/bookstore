@@ -1,0 +1,71 @@
+.orders-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+
+    p {
+        color: black
+    }
+  }
+  
+  /* Contenedor de filtros */
+.order-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-dropdown {
+    background: #f3f3f3;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    appearance: none;
+  }
+  
+  .filter-dropdown:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Estilos de la tabla */
+  .order-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th {
+    background: #f9f9f9;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .order-table td {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+  }
+  
+  .order-table tr:hover {
+    background: #f3f3f3;
+    cursor: pointer;
+  }
+  
+  /* Flecha al final de cada fila */
+  .icon-arrow {
+    float: right;
+    color: #888;
+  }
+  

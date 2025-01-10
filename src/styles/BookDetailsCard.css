@@ -1,0 +1,108 @@
+.book-details {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.book-image {
+  flex: 1;
+  text-align: center;
+  align-items: start;
+}
+
+.book-cover {
+  max-width: 20rem;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-info {
+  flex: 2;
+
+  max-width: max-content;
+
+  h2 {
+    color: Black;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+.author {
+  font-size: 18px;
+  color: #555;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.quantity button {
+  border: none;
+  background: #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantity span {
+  font-size: 18px;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.add-to-cart, .favorite {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.add-to-cart {
+  background: #1a1a4b;
+  color: white;
+}
+
+.favorite {
+  background: transparent;
+  border: 2px solid #1a1a4b;
+  color: #1a1a4b;
+}
+
+.details {
+  margin-top: 15px;
+}
+
+.details p {
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0;
+}
