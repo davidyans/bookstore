@@ -8,10 +8,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/book/:id" element={<BookDetails />} />
-        <Route path="/cart" element={<ShoppingCart />} />
+        <Route path="/" element={<h2>Bienvenido a la Tienda de Libros</h2>} />
+        <Route path="/books/:id" element={<BookDetails />} />
+        <Route path="/cart/:id" element={<ShoppingCart />} />
         <Route path="/orders" element={<OrderHistory />} />
         <Route path="/orders/:id" element={<OrderDetails />} />
+        <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
     </Router>
   );

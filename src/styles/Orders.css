@@ -69,3 +69,19 @@
     color: #888;
   }
   
+  .orders-filters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-dropdown {
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  

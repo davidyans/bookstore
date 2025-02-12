@@ -50,7 +50,7 @@
     gap: 20px;
   }
   
-  .book-image {
+  .book-image-cart {
     max-width: 100px;
     height: auto;
     margin-right: 15px;
@@ -154,5 +154,32 @@
   
   .checkout-btn:hover {
     background: #e6b800;
+  }
+
+  .checkout-btn:disabled {
+    background: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .checkout-message {
+    margin-top: 10px;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .checkout-message::before {
+    content: "ℹ️ ";
+  }
+  
+  .checkout-message.success {
+    color: green;
+  }
+  
+  .checkout-message.error {
+    color: red;
   }
   

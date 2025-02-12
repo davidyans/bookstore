@@ -1,10 +1,14 @@
 import { FaSearch, FaBell, FaUser, FaHeart, FaShoppingCart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "../styles/Header.css";
-import Logo from "../assets/logo.png"; 
+import Logo from "../assets/Logo.png"; 
 
 const Header = () => {
   const navigate = useNavigate();
+
+  const handleCartClick = () => {
+    navigate("/cart/1"); // Redirige al carrito con ID 1
+  }
 
   return (
     <header className="header">
@@ -21,7 +25,7 @@ const Header = () => {
         <FaBell className="icon" />
         <FaUser className="icon" />
         <FaHeart className="icon" />
-        <button className="cart-button" onClick={() => navigate("/cart")}>
+        <button className="cart-button" onClick={handleCartClick}>
           <FaShoppingCart className="cart-icon" />
           <span>Cart</span>
         </button>

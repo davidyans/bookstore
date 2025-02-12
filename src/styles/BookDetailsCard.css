@@ -23,7 +23,7 @@
 
   max-width: max-content;
 
-  h2 {
+  h2, p {
     color: Black;
     line-height: normal;
     margin: 0;
