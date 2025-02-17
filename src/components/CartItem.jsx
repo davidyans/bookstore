@@ -18,13 +18,7 @@ const CartItem = ({ book, updateQuantity, removeItem }) => {
         </p>
 
         <div className="quantity-controls">
-          <button onClick={() => updateQuantity(book.bookId, book.quantity - 1)} disabled={book.quantity === 1}>
-            <FaMinus />
-          </button>
-          <span>{book.quantity}</span>
-          <button onClick={() => updateQuantity(book.bookId, book.quantity + 1)}>
-            <FaPlus />
-          </button>
+          <span>Quantity: {book.quantity}</span>
           <button onClick={() => removeItem(book.cartDetailId)}>
             <FaTrash />
           </button>
